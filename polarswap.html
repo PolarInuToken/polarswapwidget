@@ -1,0 +1,61 @@
+<html>
+<body>
+  
+  <div id="swap_widget"></div>
+  
+  <script src="https://cdn.mayan.finance/mayan_widget_v_1_2_2.js"
+integrity="sha256-cuUqfbhmgeDDfwx+QGh6ncdr9kAxv8M+MLftyZ+lj9k="
+      crossorigin="anonymous" onload="(function () {
+        const config = {
+              appIdentity: {
+                name: 'Polar Swap'  ,
+                icon: './logo.png', // should be relative address
+                uri: 'https://myproject.io',
+              },
+              rpcs: {
+                solana: 'https://api.mainnet-beta.solana.com', 
+              },
+              tokens: {
+                to: {
+                  solana: ['GMBA3jpN1pzkQfFh8RSQ1rCT9qCaDLYMF51mtbWMpump'],
+                }
+              },
+              destinationChains: ['solana'],
+              
+              defaultGasDrop: {
+                solana: 0.04,
+                ethereum: 0.005,
+              },
+              colors: {
+                N900: '#160F04',
+                N700: '#FFFFFF',
+                N600: '#FFFFFF',
+                N500: '#FFFFFF',
+                N300: '#FFFFFF',
+                N100: '#9D00FF',
+                N000: '#EEB149',
+                primary: '#FFFFFF',
+                tLightBlue: 'rgba(0, 32, 55, 0.12)',
+                green: '#2B931A',
+                lightGreen: '#42FF24',
+                red: '#000000',
+                lightYellow: '#705f07',
+                primaryGradient: 'linear-gradient(180deg, #FF7600 0%, #F26F00 100%)',
+                tWhiteLight: 'rgba(43, 31, 14, 0.08)',
+                tWhiteBold: 'rgba(73, 41, 2, 0.15)',
+                tBlack: 'rgba(43, 31, 14, 0.08)',
+                mainBox: '#BF77F6',
+                background: '#FF0000',
+                toastBgNatural: '#BD8A33',
+                toastBgRed: '#BD6533',
+                toastBgGreen: '#7DBF29',
+                buttonBackground: '#FFFFFF',
+              },
+              referrerAddress: 'mysolanawallet'
+            }
+            MayanSwap.init('swap_widget', config)
+      })()"
+    /> 
+
+</body>
+</html>
