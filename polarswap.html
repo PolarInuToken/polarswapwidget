@@ -4,11 +4,11 @@
   <div id="swap_widget"></div>
   
   <script src="https://cdn.mayan.finance/mayan_widget_v_1_2_2.js"
-integrity="sha256-cuUqfbhmgeDDfwx+QGh6ncdr9kAxv8M+MLftyZ+lj9k="
+  integrity="sha256-cuUqfbhmgeDDfwx+QGh6ncdr9kAxv8M+MLftyZ+lj9k="
       crossorigin="anonymous" onload="(function () {
         const config = {
               appIdentity: {
-                name: 'Polar Swap'  ,
+                name: 'Polar Swap',
                 icon: './logo.png', // should be relative address
                 uri: 'https://myproject.io',
               },
@@ -50,6 +50,8 @@ integrity="sha256-cuUqfbhmgeDDfwx+QGh6ncdr9kAxv8M+MLftyZ+lj9k="
                 toastBgRed: '#BD6533',
                 toastBgGreen: '#7DBF29',
                 buttonBackground: '#FFFFFF',
+                // Adding this line to change the button text color to black
+                buttonText: '#000000'
               },
               referrerAddress: 'mysolanawallet'
             }
